@@ -1,0 +1,28 @@
+@import "./keyframes";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#eceaf9;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  #projects-list{
+      animation: projectList;
+      animation-duration: 2s;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15%;
+      h1 {
+          color: #aca3f0;
+      }
+  }

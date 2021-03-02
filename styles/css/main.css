@@ -1,0 +1,131 @@
+/* The animation code */
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: scale(1.9) translateX(-30%) rotate(22.8deg);
+    width: 100%; }
+  50% {
+    -webkit-transform: scale(1) translateX(0) rotate(0);
+    width: 100%; }
+  100% {
+    -webkit-transform: scale(1) translateX(0) rotate(0deg);
+    width: 0%; } }
+
+@keyframes linkUp {
+  0% {
+    position: relative;
+    bottom: 0px;
+    opacity: 1; }
+  25% {
+    position: relative;
+    bottom: 0px; }
+  100% {
+    position: relative;
+    opacity: 0;
+    bottom: 300px; } }
+
+@keyframes linkDown {
+  0% {
+    position: relative;
+    top: 0px;
+    opacity: 1; }
+  25% {
+    position: relative;
+    top: 0px; }
+  100% {
+    position: relative;
+    opacity: 0;
+    top: 500px; } }
+
+@keyframes projectList {
+  0% {
+    opacity: 0;
+    position: relative;
+    top: 500px; }
+  100% {
+    opacity: 1;
+    position: relative;
+    top: 0px; } }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: none; }
+
+.background {
+  height: 100%;
+  width: 100%;
+  z-index: 0; }
+
+#background-both {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 0; }
+
+#background-one {
+  z-index: 10;
+  width: 100%;
+  opacity: 30%;
+  background: linear-gradient(100deg, blue, white);
+  -webkit-transform: scale(1.9) translateX(-25%) rotate(23deg);
+  border: none;
+  border-bottom: none; }
+
+#background-one:focus {
+  outline: none;
+  border: none; }
+
+.background-one-transition-active {
+  animation-name: slideLeft;
+  animation-duration: 1.2s;
+  animation-delay: 0s; }
+
+#background-two {
+  background-color: #eceaf9;
+  opacity: 1;
+  -webkit-transform: scale(35) translateX(-25%) rotate(23deg); }
+
+#start-content-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1; }
+
+#link-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50%;
+  width: 100%;
+  z-index: 5; }
+  #link-nav .link-box {
+    width: 100%; }
+  #link-nav #project-link {
+    text-align: left;
+    margin-left: 10%; }
+  #link-nav #cv-link {
+    text-align: right;
+    margin-right: 20%; }
+  #link-nav .project-link-animation {
+    animation-name: linkUp;
+    animation-duration: 0.7s; }
+  #link-nav .cv-link-animation {
+    animation-name: linkDown;
+    animation-duration: 0.7s; }
+  #link-nav #project-link {
+    color: white;
+    text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.97); }
+  #link-nav #cv-link {
+    color: #aca3f0; }
+  #link-nav h2:hover {
+    cursor: pointer; }
