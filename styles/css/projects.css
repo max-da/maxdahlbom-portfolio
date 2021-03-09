@@ -45,79 +45,100 @@
     position: relative;
     top: 0px; } }
 
-@keyframes overlayFade {
+@keyframes fadeInProjects {
   0% {
     opacity: 0; }
-  50% {
-    opacity: 0; }
   100% {
-    opacity: .7; } }
+    opacity: 1; } }
+
+@keyframes content-container-fadeout {
+  0% {
+    position: relative;
+    top: 0;
+    opacity: 1; }
+  100% {
+    position: relative;
+    top: 100%;
+    opacity: 0; } }
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scroll-behavior: smooth; }
 
-html {
-  height: 100%; }
+html, body {
+  height: 100%;
+  width: 100%; }
 
 body {
   background-color: #eceaf9;
-  height: 100%;
-  width: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  border-bottom: none;
-  display: flex;
-  justify-content: center; }
-
-#projects-list {
-  animation: projectList;
-  animation-duration: 2s;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%; }
-  #projects-list h1 {
-    color: #aca3f0;
-    margin: 25px; }
-  #projects-list .project-box {
+  font-size: 1.2rem; }
+  body .content-container {
+    text-align: center;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 25%;
-    margin: 10% 0 10% 0; }
-    #projects-list .project-box .image-handler-div {
-      border: 1px sold red;
-      overflow: hidden;
+    opacity: 1;
+    animation: projectList;
+    animation-duration: 2s; }
+    body .content-container h1 {
+      color: #aca3f0;
+      margin: 25px; }
+    body .content-container #projects-list {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      flex-direction: column;
       align-items: center;
-      margin-bottom: 20%;
-      height: 100%;
-      width: 80%; }
-      #projects-list .project-box .image-handler-div img {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: 100% 0;
-        border-radius: 10%; }
-      #projects-list .project-box .image-handler-div img:hover {
-        color: black; }
-      #projects-list .project-box .image-handler-div .overlay {
-        position: absolute;
-        animation-name: overlayFade;
-        border-radius: 10%;
+      width: 100%; }
+      body .content-container #projects-list .project-box {
+        height: 300px;
+        width: 80%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        animation-name: fadeInProjects;
         animation-duration: 4s;
-        height: 22.5%;
-        opacity: .7;
-        background-color: #353535;
-        width: 80%; }
-      #projects-list .project-box .image-handler-div #title-project {
-        position: absolute;
-        font-size: 3rem;
-        color: white; }
+        align-items: center;
+        margin-bottom: 25px; }
+        body .content-container #projects-list .project-box .image-handler-div {
+          height: 70%;
+          overflow: hidden;
+          border-radius: 10%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+          body .content-container #projects-list .project-box .image-handler-div img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(0.3);
+            object-position: 0 0; }
+          body .content-container #projects-list .project-box .image-handler-div .title-project {
+            position: absolute;
+            color: white;
+            font-size: 3rem; }
+        body .content-container #projects-list .project-box .desc-box {
+          width: 80%;
+          height: 30%;
+          margin-top: 1%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10%;
+          opacity: 1;
+          background-color: #aca3f0; }
+          body .content-container #projects-list .project-box .desc-box span {
+            font-size: 1.1rem;
+            color: white; }
+    body .content-container #projects-footer {
+      height: 50px;
+      width: 100%;
+      text-align: end; }
+      body .content-container #projects-footer i {
+        margin-right: 5%;
+        font-size: 2rem;
+        color: #aca3f0; }
+  body .content-container-fadeout {
+    animation-name: content-container-fadeout;
+    animation-duration: 1.5s; }

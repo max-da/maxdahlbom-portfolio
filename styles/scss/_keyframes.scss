@@ -73,17 +73,28 @@
 }
 
 
-@keyframes overlayFade{
+@keyframes fadeInProjects{
     0%{
         opacity: 0;
     
 
     }
-    50%{
-        opacity: 0;
+  
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+@keyframes content-container-fadeout{
+    0%{
+        position: relative;
+        top:0;
+        opacity: 1;
     }
     100%{
-        opacity: .7;
-        
+        position: relative;
+        top: 100%;
+        opacity: 0;
     }
 }
