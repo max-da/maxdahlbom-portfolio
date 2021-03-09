@@ -46,6 +46,14 @@
     position: relative;
     top: 0px; } }
 
+@keyframes overlayFade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: .7; } }
+
 html,
 body {
   height: 100%;

@@ -45,9 +45,20 @@
     position: relative;
     top: 0px; } }
 
+@keyframes overlayFade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: .7; } }
+
 * {
   margin: 0;
   padding: 0; }
+
+html {
+  height: 100%; }
 
 body {
   background-color: #eceaf9;
@@ -63,9 +74,50 @@ body {
   animation: projectList;
   animation-duration: 2s;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  padding-top: 15%; }
+  height: 100%;
+  width: 100%; }
   #projects-list h1 {
-    color: #aca3f0; }
+    color: #aca3f0;
+    margin: 25px; }
+  #projects-list .project-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    margin: 10% 0 10% 0; }
+    #projects-list .project-box .image-handler-div {
+      border: 1px sold red;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20%;
+      height: 100%;
+      width: 80%; }
+      #projects-list .project-box .image-handler-div img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 100% 0;
+        border-radius: 10%; }
+      #projects-list .project-box .image-handler-div img:hover {
+        color: black; }
+      #projects-list .project-box .image-handler-div .overlay {
+        position: absolute;
+        animation-name: overlayFade;
+        border-radius: 10%;
+        animation-duration: 4s;
+        height: 22.5%;
+        opacity: .7;
+        background-color: #353535;
+        width: 80%; }
+      #projects-list .project-box .image-handler-div #title-project {
+        position: absolute;
+        font-size: 3rem;
+        color: white; }
