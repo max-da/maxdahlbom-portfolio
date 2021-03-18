@@ -1,0 +1,94 @@
+ html,body{
+     height: 100%;
+     width: 100%;
+ }
+ 
+ .spec-content-container{
+    background-color:#eceaf9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation-name: content-container-fadein;
+    animation-duration: 1.5s;
+  
+    h1 {
+        color: #aca3f0;
+        margin: 25px;
+        text-shadow: 1px 1px 6px rgba(175, 174, 174, 0.97);
+    
+    }
+    .image-container{
+        //overflow: hidden;
+        height: 50%;
+        width: 90%;
+        
+        img{
+            object-fit: cover;
+            object-position: 0 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 10%;
+            box-shadow: 1px 3px 6px rgba(150, 150, 150, 0.97);
+    
+        }
+    }
+   
+    .animate{
+        animation-name: fadeInProjects;
+        animation-duration: 1s;
+
+    }
+    .an1{
+        animation-name: animateImg;
+        animation-duration: 5s;
+
+    }
+  
+    .an2{
+        animation-name: animateImg2;
+        animation-duration: 5s;
+
+    }
+   
+    .an3{
+        animation-name: animateImg3;
+        animation-duration: 5s;
+
+    }
+  
+    .text-container {
+        margin-top: 10px;
+        background-color:#aca3f0;
+        border-radius: 10%;
+        padding: 5%;
+        width: 80%;
+        height: 100%;
+        box-shadow: 1px 1px 6px rgba(150, 150, 150, 0.97);
+        .git-date-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            a,span{
+                text-decoration: none;
+                color: white;
+                font-size: 2.5rem;
+                text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.97);
+            }
+            span{
+                font-size: 1.5rem;
+            }
+        }
+        .text-desc{
+            margin-top: 10%;
+            font-size: .9rem;
+            color: white;
+          
+            text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.97);
+
+
+        }
+    }
+ }   

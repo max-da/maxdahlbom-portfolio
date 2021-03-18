@@ -88,7 +88,7 @@
 
 @keyframes content-container-fadeout{
     0%{
-        position: relative;
+        position: relative; 
         top:0;
         opacity: 1;
     }
@@ -98,3 +98,73 @@
         opacity: 0;
     }
 }
+
+@keyframes animateImg{
+    0%{
+        opacity: 0;
+    
+
+    }
+    10%{
+        opacity: 1;
+    }
+    
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        
+    }
+}
+
+@keyframes animateImg2{
+    0%{
+        opacity: 0;
+    
+
+    }
+    10%{
+        opacity: 1;
+    }
+    
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        
+    }
+}
+@keyframes animateImg3{
+    0%{
+        opacity: 0;
+    
+
+    }
+    10%{
+        opacity: 1;
+    }
+    
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        
+    }
+}
+@keyframes content-container-fadein{
+    0%{
+        position: relative; 
+        top:-100%;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        top: 0;
+        opacity: 1;
+    }
+}
+
+

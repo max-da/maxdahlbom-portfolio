@@ -23,7 +23,9 @@ body {
   
     h1 { 
         color: #aca3f0;
-        margin: 25px;
+        margin: 25px; 
+        text-shadow: 1px 1px 6px rgba(175, 174, 174, 0.97);
+
     }
    
 
@@ -50,8 +52,8 @@ body {
           margin-bottom: 25px;
           .image-handler-div{
               height: 70%;
-              overflow: hidden;
-              border-radius: 10%;
+              //overflow: hidden;
+              //border-radius: 10%;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -59,11 +61,13 @@ body {
             
               
               img{
+                  border-radius: 10%;
                   height: 100%;
                   width: 100%;
                   object-fit: cover;
                   filter: brightness(0.3);
-              
+                  box-shadow: 1px 1px 5px rgba(175, 175, 175, 0.97);
+    
                   object-position: 0 0;
                 
               }
@@ -85,6 +89,8 @@ body {
               border-radius: 10%;
               opacity: 1;
               background-color:#aca3f0 ;
+              box-shadow: 1px 1px 6px rgba(150, 150, 150, 0.97);
+    
               span{
                   font-size: 1.1rem;
                   color: white;
@@ -109,7 +115,7 @@ body {
 }
 .content-container-fadeout{
     animation-name: content-container-fadeout;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
   
  
 }
