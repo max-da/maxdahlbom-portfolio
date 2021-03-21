@@ -37,7 +37,7 @@ const project3 = new project(
 );
 const project2 = new project(
   "todolist",
-  "Det här är den första uppgiften från vår backend-kurs. Jag skapade en webserver med express, sparar data i mongoDB med Mongoose, och sköter eventuell front-end kod med EJS. Jag tycker verkligen om backend-kursen, jag har fått en helt annan inblick i hur en hemsida fungerar. Tyvärr hann jag inte riktigt lägga lika mycket krut på stylingen som jag hade velat, men i slutändan var det inte det som var uppgiftens fokus. ",
+  "Det här är den första uppgiften från vår backend-kurs. Jag skapade en webbserver med express, sparar data i mongoDB med Mongoose, och sköter eventuell front-end kod med EJS. Jag tycker verkligen om backend-kursen, jag har fått en helt annan inblick i hur en hemsida fungerar. Tyvärr hann jag inte riktigt lägga lika mycket krut på stylingen som jag hade velat, men i slutändan var det inte det som var uppgiftens fokus. ",
   "image1.PNG",
   "nopic",
   "nopic",

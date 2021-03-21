@@ -1,4 +1,5 @@
 @import "./keyframes";
+@import "./mediaquerys";
 *{
     margin: 0;
     padding: 0;
@@ -35,14 +36,24 @@ body {
       justify-content: flex-start;
       flex-direction: column;
       align-items: center;
-     // height: 100%;
+      @include large992{
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      @include extraLarge1200{
+       flex-wrap: nowrap;
+    }
       width: 100%;
    
       .project-box{
           height: 300px;
-          width: 80%;
+          width: 90%;
+          max-width: 400px;
           overflow: hidden;
-          
+          @include large992{
+            margin: 2%;
+        }
           display: flex;
           flex-direction: column;
           animation-name: fadeInProjects;
@@ -52,6 +63,7 @@ body {
           margin-bottom: 25px;
           .image-handler-div{
               height: 70%;
+              width: 100%;
               //overflow: hidden;
               //border-radius: 10%;
               display: flex;
@@ -81,6 +93,7 @@ body {
           }
           .desc-box{
               width: 80%;
+              
               height: 30%;
               margin-top: 1%;
               display: flex;
@@ -99,7 +112,9 @@ body {
           }
       
       }
-  
+      .project-box:hover{
+          cursor: pointer;
+      }
   } 
 
   #projects-footer{

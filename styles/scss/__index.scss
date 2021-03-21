@@ -1,3 +1,5 @@
+@import "./mediaquerys";
+
 **{
     font-family: "Roboto", sans-serif;
   }
@@ -46,7 +48,7 @@
   }
   
   #background-two {
-    //background: linear-gradient(5deg, rgb(159, 152, 224), white);
+  
     background-color: #eceaf9;
     opacity: 1;
     -webkit-transform: scale(35) translateX(-25%) rotate(23deg);
@@ -56,29 +58,49 @@
     height: 100%;
     display: flex; 
     justify-content: center;
-    align-items: flex-start;
+    width: 100%;
+    align-items: center;
   
     z-index: 1;
   }
   #link-nav {
+  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    margin-top: 50%;
   
+    height: 100%;
     width: 100%;
     z-index: 5;
     .link-box {
       width: 100%;
+      height: 50%;
+    }
+    #project-link-div{
+      display:flex;
+      align-items: flex-end;
     }
     #project-link {
       text-align: left;
-      margin-left: 10%;
+      margin-left: 5%;
+     
+
+      align-items: center;
+      @include tablets-up{
+        margin-left: 15%;
+        margin-bottom: 5%;
+    
+      }
     }
     #cv-link {
       text-align: right;
-      margin-right: 20%;
+      margin-right: 10%;
+      @include tablets-up{
+        margin-right: 20%;
+    
+    
+      }
     }
     .project-link-animation {
       animation-name: linkUp;
@@ -101,4 +123,4 @@
       cursor: pointer;
     }
   }
-  
+

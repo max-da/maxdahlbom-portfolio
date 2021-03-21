@@ -8,7 +8,7 @@ $(function(){
 })
 let x = 1;
 function render(project){
-  
+    document.title = project.name;
     let contentContainer =  $(".spec-content-container");
 
     let projectHeading = $("<h1>")

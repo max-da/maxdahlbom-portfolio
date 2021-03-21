@@ -1,13 +1,19 @@
  html,body{
      height: 100%;
      width: 100%;
+     display: flex;
+     justify-content: center;
  }
  
  .spec-content-container{
     background-color:#eceaf9;
     height: 100%;
     width: 100%;
+    max-width: 440px;
     display: flex;
+    @include large992{
+        max-width: 600px;
+    }
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -24,6 +30,7 @@
         //overflow: hidden;
         height: 50%;
         width: 90%;
+       
         
         img{
             object-fit: cover;
@@ -82,11 +89,14 @@
             }
         }
         .text-desc{
+            @include large992{
+               width: 70%;
+            }
             margin-top: 10%;
             font-size: .9rem;
             color: white;
           
-            text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.97);
+            text-shadow: 1px 1px 4px rgba(150, 150, 150, 0.97);
 
 
         }
